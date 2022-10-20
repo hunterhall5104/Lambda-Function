@@ -1,0 +1,26 @@
+##
+# Summary - Lambda Function
+# Architects - Hunter Hall
+# Developed by - Hunter Hall
+# Date - 10/19/2022
+# Initial Version - 0.1
+# Description - Using a lambda function this program tells whether a number is even or odd
+#
+# Modified by:
+# Modified date:
+# Version -
+# Description:
+#
+##
+
+try:
+    # Take user input for number variable
+    num = int(input("Enter a number: "))
+    # Find if number is even
+    even = (lambda number: num % 2 == 0)
+    print(even(num))
+
+except Exception as e:
+    print("lambda function - Error Occured " + str(e))
+finally:
+    print("Lambda function executed")
